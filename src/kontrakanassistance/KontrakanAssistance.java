@@ -66,11 +66,13 @@ public class KontrakanAssistance {
         System.out.println("keuangan kontrakan bulan ini:");
         Kontrakan1.total_saldo();//line (1)
         Kontrakan1.print_total_saldo();//line (2)
+        System.out.println(Kontrakan1.get_total_saldo());//line (30
         Kontrakan1.print_total_tagihan();
         Kontrakan1.print_total_hutang();
         Kontrakan1.print_saldo_bersih();
         //masih aneh pak, setelah saya commit ke github disini jadi error ga jelas
-        //kalau line (1) di hapus, line (2) valuenya jadi 0, itu kenapa ya pa
+        //kalau line (1) di hapus, line (2) valuenya jadi 0, itu kenapa ya pa? begitu juga line 3
+        //error ini berlaku di smua yang perlu fetching value variabel dari Class Kontrakan
 
     }
 

@@ -10,6 +10,9 @@ package kontrakanassistance;
  * @author Z 400
  */
 public class Kontrakan {
+    public Kontrakan (){
+        
+    }
 
     Anggota member = new Anggota();
     Anggota member1 = new Anggota();
