@@ -61,7 +61,7 @@ public class KontrakanAssistance {
         
         System.out.println(Kontrakan1.get_nett_saldo());
         
-
+        
     }
 
 }

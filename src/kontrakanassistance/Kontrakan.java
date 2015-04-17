@@ -12,6 +12,9 @@ package kontrakanassistance;
 public class Kontrakan {
 
     Anggota member = new Anggota();
+    Anggota member1 = new Anggota ();
+    Anggota member2 = new Anggota ();
+    Anggota member3 = new Anggota ();
     private int saldo;
     uang tagihan_Listrik = new uang (); // bisa di tambah
     private int totta;
