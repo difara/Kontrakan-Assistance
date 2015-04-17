@@ -17,7 +17,6 @@ public class KontrakanAssistance {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int saldo;
 
         // TODO code application logic here
         Kontrakan Kontrakan1 = new Kontrakan();
