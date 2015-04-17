@@ -15,6 +15,10 @@ public class Anggota {
     Piket piket = new Piket();
     uang setoran = new uang();
     uang hutang = new uang();
+    
+    public Anggota (){
+        
+    }
 
     public void setNama(String nama) throws Exception {
         for (char n : nama.toCharArray()) {

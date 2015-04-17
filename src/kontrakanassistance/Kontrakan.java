@@ -12,49 +12,64 @@ package kontrakanassistance;
 public class Kontrakan {
 
     Anggota member = new Anggota();
-    Anggota member1 = new Anggota ();
-    Anggota member2 = new Anggota ();
-    Anggota member3 = new Anggota ();
+    Anggota member1 = new Anggota();
+    Anggota member2 = new Anggota();
+    Anggota member3 = new Anggota();
     private int saldo;
-    uang tagihan_Listrik = new uang (); // bisa di tambah
+    uang tagihan_Listrik = new uang(); // bisa di tambah
     private int totta;
-                 //totta = total tagihan
+    //totta = total tagihan
     private int nett;
     private int totalhutang;
-           
-        
-        public void total_tagihan(){
-           int spend = this.tagihan_Listrik.get();//bisa di tambah tagihan lain lain
-           this.totta = spend;
-        }
-        
-        public int get_total_tagihan(){
-            return totta;
-        }
+
+    public void total_tagihan() {
+        int spend = this.tagihan_Listrik.get();//bisa di tambah tagihan lain lain
+        this.totta = spend;
+    }
+
+    public int get_total_tagihan() {
+        return totta;
+    }
+
+    public void total_saldo() {
+        int save;
+        save = this.member.setoran.get();//bisa di tambah setoran setoran
+        this.saldo = save;
+        System.out.println(saldo);
+    }
+
+    public int get_total_saldo() {
+        return this.saldo;
+    }
+
+    public void nett_saldo() {
+        int bersih = this.saldo - this.totta - this.totalhutang;
+        this.nett = bersih;
+    }
+
+    public int get_nett_saldo() {
+        return nett;
+    }
+
+    public void total_hutang() {
+        int utang = this.member.hutang.get();
+        this.totalhutang = utang;
+    }
+
+    public void print_total_saldo() {
+        System.out.println(saldo);
+    }
+
+    public void print_total_tagihan() {
+        System.out.println(totta);
+    }
+
+    public void print_saldo_bersih() {
+        System.out.println(nett);
+    }
     
-        public void total_saldo(){
-           int save = this.member.setoran.get();//bisa di tambah setoran setoran
-           this.saldo = save;
+    public void print_total_hutang (){
+            System.out.println(totalhutang);
         }
 
-        public int get_total_saldo(){
-            return saldo ;
-        }
-        
-        public void nett_saldo(){
-            int bersih = this.saldo - this.totta-this.totalhutang;
-            this.nett = bersih;
-        }
-        
-        public int get_nett_saldo(){
-            return nett;
-        }
-        
-        public void total_hutang (){
-            int utang= this.member.hutang.get();
-            this.totalhutang=utang;
-        }
-        
 }
-        
-    
