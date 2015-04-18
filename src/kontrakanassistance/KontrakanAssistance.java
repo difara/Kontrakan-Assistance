@@ -70,8 +70,8 @@ public class KontrakanAssistance {
         Kontrakan1.print_total_hutang();
         Kontrakan1.print_saldo_bersih();
         //masih aneh pak, setelah saya commit ke github disini jadi error ga jelas
-        //kalau line (1) di hapus, line (2) valuenya jadi 0, itu kenapa ya pa? begitu juga line 3
-        //error ini berlaku di smua yang perlu fetching value variabel dari Class Kontrakan
+        //kalau line (1) di hapus, line (2) sama line (3) valuenya jadi 0, itu kenapa ya pa? 
+        //error ini berlaku di semua method yang perlu fetching value variabel dari Class Kontrakan
 
     }
 
