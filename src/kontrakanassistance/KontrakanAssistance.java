@@ -53,25 +53,23 @@ public class KontrakanAssistance {
         System.out.print("piket " + Kontrakan1.member.getnama() + " pada hari ");
         System.out.println(Kontrakan1.member.piket.getpiket());
 
-       
-
         try {
             Kontrakan1.member.hutang.set("10000");
         } catch (Exception ex) {
             System.out.println("terjadi error pada pengisian hutang :");
             System.out.println(ex.getMessage());
         }
-        
+
         System.out.println("keuangan kontrakan bulan ini:");
-        Kontrakan1.total_saldo();//line (1)
-        Kontrakan1.print_total_saldo();//line (2)
-        System.out.println(Kontrakan1.get_total_saldo());//line (30
-        Kontrakan1.print_total_tagihan();
-        Kontrakan1.print_total_hutang();
-        Kontrakan1.print_saldo_bersih();
-        //masih aneh pak, setelah saya commit ke github disini jadi error ga jelas
-        //kalau line (1) di hapus, line (2) sama line (3) valuenya jadi 0, itu kenapa ya pa? 
-        //error ini berlaku di semua method yang perlu fetching value variabel dari Class Kontrakan
+        Kontrakan1.total_hutang();
+        Kontrakan1.total_saldo();
+        System.out.println(Kontrakan1.get_total_saldo());
+        Kontrakan1.total_tagihan();
+        System.out.println(Kontrakan1.get_total_tagihan());
+        Kontrakan1.nett_saldo();
+        System.out.println(Kontrakan1.get_nett_saldo());
+        //ternyata salahnya bego pak
+        //saya lupa udah ngapus line yang summon method buat totalin, jadi ga jalan ahah
 
     }
 

@@ -10,8 +10,9 @@ package kontrakanassistance;
  * @author Z 400
  */
 public class Kontrakan {
-    public Kontrakan (){
-        
+
+    public Kontrakan() {
+
     }
 
     Anggota member = new Anggota();
@@ -58,21 +59,4 @@ public class Kontrakan {
         int utang = this.member.hutang.get();
         this.totalhutang = utang;
     }
-
-    public void print_total_saldo() {
-        System.out.println(saldo);
-    }
-
-    public void print_total_tagihan() {
-        System.out.println(totta);
-    }
-
-    public void print_saldo_bersih() {
-        System.out.println(nett);
-    }
-    
-    public void print_total_hutang (){
-            System.out.println(totalhutang);
-        }
-
 }
